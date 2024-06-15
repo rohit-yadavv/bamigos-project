@@ -1,7 +1,12 @@
-import { Inter } from "next/font/google";
-import "./globals.css";
+import localfont from "next/font/local";
 
-const inter = Inter({ subsets: ["latin"] });
+import "./globals.css";
+import { ThemeProvider } from "@/context/ThemeProvider";
+
+const buzinga = localfont({
+  src: "../public/fonts/Buzinga-Regular.otf",
+  variable: "--font-buzinga",
+});
 
 export const metadata = {
   title: "Create Next App",
@@ -10,8 +15,10 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
-    </html>
+    <ThemeProvider>
+      <html lang="en">
+        <body className={buzinga.variable}>{children}</body>
+      </html>
+    </ThemeProvider>
   );
 }
