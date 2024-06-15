@@ -11,7 +11,7 @@ const Page = () => {
   return (
     <div>
       <Navigation name="metablaster" />
-      <h1 className="pt-12 text-white">metablaster</h1>
+      <h1 className="pt-12 text-2xl text-white">metablaster</h1>
       <div className="flex flex-col-reverse justify-between gap-2 pt-6 sm:flex-row">
         <div className="flex flex-col items-center justify-center max-sm:w-full max-sm:pt-6">
           <ImageCarousel setImage={setImage} setVideo={setVideo} /> 
