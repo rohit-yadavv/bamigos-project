@@ -20,10 +20,10 @@ export function TopProducts() {
         
       ]} 
     >
-      <CarouselContent className="-ml-12">
+      <CarouselContent >
         {
           products.map(({ name, path }) => (
-            <CarouselItem key={name} className=" md:basis-1/3 lg:ml-12 lg:basis-1/4 "> 
+            <CarouselItem key={name} className=" sm:ml-16 md:basis-1/3 lg:basis-1/4 "> 
             <div className="relative w-full p-2 sm:w-[300px] md:w-[350px]"> 
                 <Card path={path} title={name} />  
             </div>

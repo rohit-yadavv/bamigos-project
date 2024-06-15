@@ -3,7 +3,7 @@ import React from "react";
 
 const page = () => {
   return (
-    <div className="h-[10000px] w-full font-buzinga">
+    <div className="mb-10 h-screen w-full font-buzinga">
       {/* <Card /> */}
       <div >
       <h2 className="pb-2 text-center text-2xl text-white">Our Top Games</h2>
