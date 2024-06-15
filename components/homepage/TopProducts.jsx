@@ -31,8 +31,8 @@ export function TopProducts() {
           ))
         }
       </CarouselContent>
-      <CarouselPrevious className="text-white max-sm:hidden"/>
-      <CarouselNext className="text-white max-sm:hidden"/>
+      <CarouselPrevious className="left-[20px] text-white max-sm:hidden"/>
+      <CarouselNext className="right-[20px] text-white max-sm:hidden"/>
     </Carousel>
   );
 }
