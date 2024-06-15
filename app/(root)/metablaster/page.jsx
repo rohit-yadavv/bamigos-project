@@ -28,6 +28,7 @@ const Page = () => {
           ) : (
             <iframe
             className="max-sm:size-full"
+            allowFullScreen
               width={900}
               height={500}
               src="https://www.youtube.com/embed/tgbNymZ7vqY"
